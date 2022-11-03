@@ -1,6 +1,6 @@
 [
    {
-    "id": "1",
+    "userId": "1",
     "username": "eclipse",
     "password":"code",
     "email": "code123@gmail.com",
@@ -8,7 +8,7 @@
 },
 {
 
-   "id": "2",
+   "userId": "2",
    "username": "vscode",
    "password":"main",
    "email": "main123@gmail.com",

@@ -1,12 +1,30 @@
 [
 {
-    "id": "1",
+    "prodId": "1",
     "category": "Vegetables",
-    "product name": "Spinach",
-    "price": "2.00",
+    "productname": "Spinach",
+    "price": 2.00,
     "expiration date": "11-13-2022",
     "Organic": "true",
-    "pre packed": "true"
+    "pre-packed": "true"
         
+},
+{
+    "prodId": "2",
+    "category": "Vegetables",
+    "productname": "Kale",
+    "price": 2.50,
+    "expiration date": "11-13-2022",
+    "Organic": "true",
+    "pre-packed": "true"
+},
+{
+    "prodId": "3",
+    "category": "Vegetables",
+    "productname": "Mint",
+    "price": 3.00,
+    "expiration date": "11-13-2022",
+    "Organic": "true",
+    "pre-packed": "true"
 }
 ]

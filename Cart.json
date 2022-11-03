@@ -1,8 +1,24 @@
 [
     {
-        "id": "1",
-        "name": "Spinach",
-        "qty": "2",
-        "total": "4.00"
+        "userId": "1",
+        "purchased": [
+            {
+                "prodId": "1",
+                "qty": 2,
+                "total": 4.00
+            },
+            {
+                "prodId": "2",
+                "qty": 1,
+                "total": 2.50 
+            },
+            {
+                "prodId": "3",
+                "qty": 3,
+                "total": 9.00
+            }
+
+        ],
+     "Grand-Total": 15.50
     }
 ]
