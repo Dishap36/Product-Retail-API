@@ -1,0 +1,19 @@
+[
+   {
+    "id": "1",
+    "username": "eclipse",
+    "password":"code",
+    "email": "code123@gmail.com",
+    "role": "ADMIN"
+},
+{
+
+   "id": "2",
+   "username": "vscode",
+   "password":"main",
+   "email": "main123@gmail.com",
+   "role": "USER"
+}
+
+
+]
