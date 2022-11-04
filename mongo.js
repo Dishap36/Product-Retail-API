@@ -1,4 +1,4 @@
-db.User.insertMany(
+db.user.insertMany(
     [
         {
          "userId": "1",
