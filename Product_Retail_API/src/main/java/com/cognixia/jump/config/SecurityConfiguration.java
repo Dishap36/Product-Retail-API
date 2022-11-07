@@ -43,8 +43,8 @@ public class SecurityConfiguration {
 			.authorizeRequests()
 			.antMatchers(HttpMethod.POST, "/api/user").permitAll()
 			.antMatchers("/authenticate").permitAll() 
-			.antMatchers(HttpMethod.DELETE, "/api/product/{prodId}").hasRole("ADMIN")	
-			.antMatchers(HttpMethod.POST, "/api/product").hasRole("ADMIN")
+			//.antMatchers(HttpMethod.DELETE, "/api/product/{prodId}").hasRole("ADMIN")	
+			//.antMatchers(HttpMethod.POST, "/api/product").hasRole("ADMIN")
 			//.anyRequest().authenticated()	// all APIs, you have to have a user account
 			.and()
 			.sessionManagement().sessionCreationPolicy( SessionCreationPolicy.STATELESS ); 
