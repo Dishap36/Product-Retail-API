@@ -2,7 +2,9 @@ package com.cognixia.jump.model;
 
 import java.util.Date;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraintvalidation.SupportedValidationTarget;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
