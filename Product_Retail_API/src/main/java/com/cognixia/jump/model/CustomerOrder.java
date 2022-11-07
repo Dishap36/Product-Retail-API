@@ -9,15 +9,25 @@ public class CustomerOrder {
 	private String name;
 	
 	
+	private String price;
+	
 	public CustomerOrder () {
 		
 	}
 
 
-	public CustomerOrder(@Pattern(regexp = "^[A-Z]{12}$", message = "Please enter a valid name") String name) {
+	
+
+
+	public CustomerOrder(@Pattern(regexp = "^[A-Z]{12}$", message = "Please enter a valid name") String name,
+			String price) {
 		super();
 		this.name = name;
+		this.price = price;
 	}
+
+
+
 
 
 	public String getName() {
@@ -30,9 +40,25 @@ public class CustomerOrder {
 	}
 
 
+	public String getPrice() {
+		return price;
+	}
+
+
+
+
+
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
+
+
+
+
 	@Override
 	public String toString() {
-		return "CustomerOrder [name=" + name + "]";
+		return "CustomerOrder [name=" + name + ", price=" + price + "]";
 	}
 	
 	

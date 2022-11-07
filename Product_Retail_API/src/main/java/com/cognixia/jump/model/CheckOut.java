@@ -10,20 +10,23 @@ public class CheckOut {
 	// res
 		private String userId;
 		// user id ;
-		private List <CustomerOrder> orderItems;
+		private List <CustomerOrder> customerorder;
 		
 		private double total;
+		
+
 		
 		public CheckOut() {
 			
 			
 		}
 
-		public CheckOut(String userId, List<CustomerOrder> orderItems, double total) {
+		public CheckOut(String userId, List<CustomerOrder> customerorder, double total) {
 			super();
 			this.userId = userId;
-			this.orderItems = orderItems;
+			this.customerorder = customerorder;
 			this.total = total;
+			
 		}
 
 		public String getUserId() {
@@ -34,12 +37,12 @@ public class CheckOut {
 			this.userId = userId;
 		}
 
-		public List<CustomerOrder> getOrderItems() {
-			return orderItems;
+		public List<CustomerOrder> getCustomerorder() {
+			return customerorder;
 		}
 
-		public void setOrderItems(List<CustomerOrder> orderItems) {
-			this.orderItems = orderItems;
+		public void setCustomerorder(List<CustomerOrder> customerorder) {
+			this.customerorder = customerorder;
 		}
 
 		public double getTotal() {
@@ -50,9 +53,11 @@ public class CheckOut {
 			this.total = total;
 		}
 
+
+
 		@Override
 		public String toString() {
-			return "CheckOut [userId=" + userId + ", orderItems=" + orderItems + ", total=" + total + "]";
+			return "CheckOut [userId=" + userId + ", customerorder=" + customerorder + ", total=" + total + "]";
 		}
 		
 		
@@ -68,29 +73,5 @@ public class CheckOut {
 	
 		
 		
-		//name
-		// if name != name in collection than
-		// throw error msg or try catch block 
-		// \else if name = name in collection 
-//			get item name,price
-//			insert it in list of checkout item 
 		
-		
-		
-		// get req to get all items in cart ==== simple
-		
-		// post req to add itms to cart======  req- send ["spinach,lemon,kale ,grapes, lemon,lemon,spinch] && res  [name, price  
-		//  req -> name<list>
-
-		
-		//	res => user id, 
-//					<List> names === names in our product list {
-//								print name and get price }
-//			 &&   }, add prices of list and display to a total var   
-		//
-		
-		// delete to remove item frrom card by id / name
-		
-		//post to find total 
-
 
