@@ -66,8 +66,12 @@ public class CheckOutController {
 		return ResponseEntity.status(400).body("Product does not exist");
 	}
 	 
+//	@PostMapping("/checkout")	
+//	public ResponseEntity<?> checkoutForUser(@RequestBody CheckOut checkout) {
+//		
 		
-			
+		
+	}
 	
 	
 	
@@ -80,6 +84,6 @@ public class CheckOutController {
 	
 	
 	
-}
+//}
 	
 

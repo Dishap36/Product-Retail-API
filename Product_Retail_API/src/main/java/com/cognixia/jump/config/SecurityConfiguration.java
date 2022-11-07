@@ -42,13 +42,13 @@ public class SecurityConfiguration {
 		http.csrf().disable()
 			.authorizeRequests()
 			.antMatchers(HttpMethod.POST, "/api/user").permitAll()
-			.antMatchers("/authenticate").permitAll() // anyone can  create a JWT without needing to have a JWT first
+			.antMatchers("/authenticate").permitAll() 
+			.antMatchers(HttpMethod.DELETE, "/api/product/{prodId}").hasRole("ADMIN")	
+			.antMatchers(HttpMethod.POST, "/api/product").hasRole("ADMIN")
 			//.anyRequest().authenticated()	// all APIs, you have to have a user account
 			.and()
-			.sessionManagement().sessionCreationPolicy( SessionCreationPolicy.STATELESS ); // tell spring security to NOT create sessions
-		// request will go through many filters,but typically the FIRST filter it checks is the one for username and password
-		// however, we will set it up, that our JWT filter gets checked first, or selse the authentication will fail, since spring security
-		//won't know where to find the username and password
+			.sessionManagement().sessionCreationPolicy( SessionCreationPolicy.STATELESS ); 
+		
 		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 		
 		return http.build();

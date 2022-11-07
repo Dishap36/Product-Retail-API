@@ -1,5 +1,6 @@
 package com.cognixia.jump.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.validation.Valid;
@@ -35,7 +36,7 @@ public class Product {
 	@NotBlank
 	private double price;
 	
-	private Date expiration;
+	private LocalDate expiration;
 	
 	@NotBlank
 	private boolean organic;
@@ -48,7 +49,7 @@ public class Product {
 	}
 
 	public Product(String prodId, @NotBlank String category, @NotBlank String productname, @NotBlank double price,
-			Date expiration, @NotBlank boolean organic, @NotBlank boolean prepacked) {
+			LocalDate expiration, @NotBlank boolean organic, @NotBlank boolean prepacked) {
 		super();
 		this.prodId = prodId;
 		this.category = category;
@@ -91,11 +92,11 @@ public class Product {
 		this.price = price;
 	}
 
-	public Date getExpiration() {
+	public LocalDate getExpiration() {
 		return expiration;
 	}
 
-	public void setExpiration(Date expiration) {
+	public void setExpiration(LocalDate expiration) {
 		this.expiration = expiration;
 	}
 
