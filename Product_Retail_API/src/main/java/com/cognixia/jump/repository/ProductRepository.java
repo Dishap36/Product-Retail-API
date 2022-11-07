@@ -9,9 +9,6 @@ import com.cognixia.jump.model.Product;
 
 @Repository
 public interface ProductRepository extends MongoRepository<Product, String> {
-
-	
-	//public List<Product> getPriceFromProduct(double price);
 	
 	
 	public List<Product> findProductByProductname(String productname);
